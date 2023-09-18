@@ -95,7 +95,7 @@ function displayTodayTasks(){
 		today: today,
 	};
 	
-	const apiUrl = 'http://185.27.135.185:3001/api/getTodayTasks';
+	const apiUrl = 'https://185.27.135.185:3001/api/getTodayTasks';
 
 	const requestOptions = {
 		method: 'POST',
@@ -219,7 +219,7 @@ function displayOverdueTasks(){
 		today: today,
 	};
 	
-	const apiUrl = 'http://185.27.135.185:3001/api/getOverdueTasks';
+	const apiUrl = 'https://185.27.135.185:3001/api/getOverdueTasks';
 
 	const requestOptions = {
 		method: 'POST',
@@ -333,7 +333,7 @@ function commitTask(event){
 		id: id,
 	};
 	
-	const apiUrl = 'http://185.27.135.185:3001/api/commitTask';
+	const apiUrl = 'https://185.27.135.185:3001/api/commitTask';
 
 	const requestOptions = {
 		method: 'POST',
@@ -454,7 +454,7 @@ function addTask(){
 	document.getElementById("TaskNumber").value = "";
 	document.getElementById("TaskType").value = "zi";
 	
-	const apiUrl = 'http://185.27.135.185:3001/api/addTask';
+	const apiUrl = 'https://185.27.135.185:3001/api/addTask';
 
 	const requestOptions = {
 		method: 'POST',
@@ -488,7 +488,7 @@ function displayHomesAllTasks(){
 		UserId: userData.id,
 	}
 	
-	const apiUrl = 'http://185.27.135.185:3001/api/displayHomesAllTasks';
+	const apiUrl = 'https://185.27.135.185:3001/api/displayHomesAllTasks';
 
 	const requestOptions = {
 		method: 'POST',
@@ -530,7 +530,7 @@ function displayHomesTodayTasks(){
 		UserId: userData.id,
 	}
 	
-	const apiUrl = 'http://185.27.135.185:3001/api/displayHomesAllTasks';
+	const apiUrl = 'https://185.27.135.185:3001/api/displayHomesAllTasks';
 
 	const requestOptions = {
 		method: 'POST',
@@ -574,7 +574,7 @@ function displayAllTasks(){
 		HomeId: HomeId,
 	}
 	
-	const apiUrl = 'http://185.27.135.185:3001/api/displayAllTasks';
+	const apiUrl = 'https://185.27.135.185:3001/api/displayAllTasks';
 
 	const requestOptions = {
 		method: 'POST',
@@ -679,7 +679,7 @@ function deleteTask(event){
 		TaskId: id,
 	};
 	
-	const apiUrl = 'http://185.27.135.185:3001/api/deleteTask';
+	const apiUrl = 'https://185.27.135.185:3001/api/deleteTask';
 
 	const requestOptions = {
 		method: 'POST',
@@ -752,7 +752,7 @@ function addHome(){
 		UserId: userData.id,
 	}
 	
-	const apiUrl = 'http://185.27.135.185:3001/api/addHome';
+	const apiUrl = 'https://185.27.135.185:3001/api/addHome';
 
 	const requestOptions = {
 		method: 'POST',
@@ -784,7 +784,7 @@ function showHomes(){
 		UserId: userData.id,
 	}
 	
-	const apiUrl = 'http://185.27.135.185:3001/api/showHomes';
+	const apiUrl = 'https://185.27.135.185:3001/api/showHomes';
 
 	const requestOptions = {
 		method: 'POST',
@@ -850,7 +850,7 @@ function addUser(event){
 		Email: Email,
 	};
 	
-	const apiUrl = 'http://185.27.135.185:3001/api/addUSerToHome';
+	const apiUrl = 'https://185.27.135.185:3001/api/addUSerToHome';
 
 	const requestOptions = {
 		method: 'POST',
@@ -946,7 +946,7 @@ function collectLogin(event){
 		pass: pass,
 	}
 	
-	const apiUrl = 'http://185.27.135.185:3001/api/login';
+	const apiUrl = 'https://185.27.135.185:3001/api/login';
 
 	const requestOptions = {
 		method: 'POST',
@@ -1093,7 +1093,7 @@ function collectRegister(event){
 		Password: Password
 	};
 	
-	const apiUrl = 'http://185.27.135.185:3001/api/register';
+	const apiUrl = 'https://185.27.135.185:3001/api/register';
 
 	const requestOptions = {
 		method: 'POST',
@@ -1219,7 +1219,7 @@ function validateForm(){
 }
 
 function existEmail(email){
-	const apiUrl = 'http://185.27.135.185:3001/api/existEmail';
+	const apiUrl = 'https://185.27.135.185:3001/api/existEmail';
 		
 		var data = {
 			email: email,
